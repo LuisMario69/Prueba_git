@@ -1,7 +1,7 @@
 class Gerente extends Empleado {
     private double bono;
 
-    // Polimorfismo
+    // Funcion para calcular salario
     @Override
     public double calcularSalario() {
         return super.calcularSalario() + bono;
