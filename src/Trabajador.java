@@ -1,0 +1,3 @@
+interface Trabajador {
+    void realizarTarea();
+}
