@@ -7,6 +7,8 @@ class Rectangulo extends FiguraGeometrica {
         super(nombre, color);
     }
 
+    //Forma para calcular el area
+
     public double calcularArea() {
         return longitud * ancho;
     }
