@@ -6,6 +6,7 @@ class Empleado {
         return salarioBase;
     }
 }
+ // Clase gerente
 
 class Gerente extends Empleado {
     private double bono;
@@ -15,6 +16,8 @@ class Gerente extends Empleado {
         return super.calcularSalario() + bono;
     }
 }
+
+// Clase vendedor
 
 class Vendedor extends Empleado {
     private double comisionPorVenta;
