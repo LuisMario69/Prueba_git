@@ -1,13 +1,10 @@
 public class FiguraGeometrica {
 
-    // Clase base
 
     public FiguraGeometrica(String nombre, String color) {
         this.nombre = nombre;
         this.color = color;
     }
-
-    // Defincion de atributos
 
     private String nombre;
     private String color;
