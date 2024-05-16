@@ -1,49 +1,27 @@
-class FiguraGeometrica {
-    private String nombre;
-    private String color;
+public class FiguraGeometrica {
 
-    public void establecerNombre(String nombre) {
+
+    public FiguraGeometrica(String nombre, String color) {
         this.nombre = nombre;
-    }
-
-    public String obtenerNombre() {
-        return nombre;
-    }
-
-    public void establecerColor(String color) {
         this.color = color;
     }
 
-    public String obtenerColor() {
+    private String nombre;
+    private String color;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getColor() {
         return color;
     }
-}
 
-class Rectangulo extends FiguraGeometrica {
-    private double longitud;
-    private double ancho;
-
-    public void establecerLongitud(double longitud) {
-        this.longitud = longitud;
-    }
-
-    public double obtenerLongitud() {
-        return longitud;
-    }
-
-    public void establecerAncho(double ancho) {
-        this.ancho = ancho;
-    }
-
-    public double obtenerAncho() {
-        return ancho;
-    }
-
-    public double calcularArea() {
-        return longitud * ancho;
-    }
-
-    public double calcularPerimetro() {
-        return 2 * (longitud + ancho);
+    public void setColor(String color) {
+        this.color = color;
     }
 }
