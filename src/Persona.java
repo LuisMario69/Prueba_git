@@ -1,42 +1,55 @@
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.time.Year;
 
-class Persona {
-    private String nombre;
-    private int edad;
-    private String fechaNacimiento;
+public class Persona {
+
+    private String Nombre;
+    private String FechaDeNacimiento;
+    private Integer Edad;
+
+    public Persona(String nombre, String fechaDeNacimiento, int edad) {
+    }
+
+
+    // Getters y setters
 
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        Nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
+    public String getFechaDeNacimiento() {
+        return FechaDeNacimiento;
     }
+
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+
+        if (Edad != null && Edad >= 0) {
+
+            Year year = Year.now();
+            int añoActual = year.getValue();
+            int añoDeNacimiento = añoActual - Edad;
+
+
+            FechaDeNacimiento = fechaDeNacimiento;
+        } else {
+            System.out.println("NO VALIDO");
+        }
+
+
+    }
+
+
+    public Integer getEdad() {
+        return Edad;
+    }
+
 
     public void setEdad(int edad) {
-        this.edad = edad;
-    }
+        if (edad >= 0) {
 
-    public String getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(String fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public void calcularFechaNacimiento() {
-        if (this.edad > 0) {
-            LocalDate fechaActual = LocalDate.now();
-            LocalDate fechaNacimientoCalculada = fechaActual.minusYears(this.edad);
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            this.fechaNacimiento = fechaNacimientoCalculada.format(formatter);
         }
     }
-
-
+}
