@@ -7,6 +7,8 @@ public class FiguraGeometrica {
         this.color = color;
     }
 
+    // Defincion de atributos
+
     private String nombre;
     private String color;
 
