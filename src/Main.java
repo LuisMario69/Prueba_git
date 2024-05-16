@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Pruebas de encapsulamiento
         Persona persona1 = new Persona("Juan Pérez", 30, "1992-05-15");
-        System.out.println("Nombre: " + persona1.obtenerNombre());
+        System.out.println("Nombre: " + persona1.setNombre());
         System.out.println("Edad: " + persona1.obtenerEdad());
         System.out.println("Fecha de Nacimiento: " + persona1.obtenerFechaNacimiento());
         persona1.calcularFechaNacimiento();

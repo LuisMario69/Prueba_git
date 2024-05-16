@@ -39,13 +39,4 @@ class Persona {
         }
     }
 
-    public static void main(String[] args) {
-        Persona persona = new Persona();
-        persona.setNombre("Juan");
-        persona.setEdad(25);
-        persona.calcularFechaNacimiento();
-        System.out.println("Nombre: " + persona.getNombre());
-        System.out.println("Edad: " + persona.getEdad());
-        System.out.println("Fecha de Nacimiento: " + persona.getFechaNacimiento());
-    }
-}
+
