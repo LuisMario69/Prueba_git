@@ -1,5 +1,6 @@
 public class FiguraGeometrica {
 
+    // Clase base
 
     public FiguraGeometrica(String nombre, String color) {
         this.nombre = nombre;
