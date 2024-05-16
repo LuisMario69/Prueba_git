@@ -1,4 +1,5 @@
 class Rectangulo extends FiguraGeometrica {
+
     private double longitud;
     private double ancho;
 
@@ -10,7 +11,6 @@ class Rectangulo extends FiguraGeometrica {
         return longitud * ancho;
     }
 
-    // Método para calcular el perímetro del rectángulo
     public double calcularPerimetro() {
         return 2 * (longitud + ancho);
     }
